@@ -4,42 +4,47 @@
         <meta charset="utf-8">
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="display">
-            <div class="history"></div>
-            <div class="result"></div>
-        </div>
-        <div class="keys">
-            <div class="row">
-                <button>Clear</button>
-                <button>Delete</button>
-                <button></button>
-                <button>&divide;</button>
+        <div class="calculator">
+            <div class="display">
+                <div class="history">
+                    <p id="history"></p>
+                </div>
+                <div class="result">
+                    <p id="result">0</p>
+                </div>
             </div>
-            <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>&times;</button>
-            </div>
-            <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>&minus;</button>
-            </div>
-            <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&plus;</button>
-            </div>
-            <div class="row">
-                <button class="zero">0</button>
-                <button>.</button>
-                <button>=</button>
+            <div class="keys">
+                <div class="row one">
+                    <button class="clear">Clear</button>
+                    <button class="delete">Delete</button>
+                    <button class="operator">&divide;</button>
+                </div>
+                <div class="row">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="operator">&times;</button>
+                </div>
+                <div class="row">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="operator">&minus;</button>
+                </div>
+                <div class="row">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="operator">&plus;</button>
+                </div>
+                <div class="row">
+                    <button class="zero">0</button>
+                    <button>.</button>
+                    <button class="equal">=</button>
+                </div>
             </div>
         </div>
     </body>
